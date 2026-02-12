@@ -1,0 +1,106 @@
+.articleCompetences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  width: 100%;
+}
+
+.divNomCompetences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  opacity: 0;
+  clip-path: inset(0 50% 0 50%);
+  animation: zoneReveal 1.9s ease-out forwards;
+}
+
+.sectionLangage {
+  display: flex;
+  gap: 5rem;
+}
+
+.divLang {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.divLangSpecial {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.divAllLangage {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.divLangage {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sousLanguage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 32px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.divLangageLast {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 9rem;
+}
+
+.pLongCompetences {
+  width: 20vw;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 431px) {
+  .articleCompetences {
+    justify-content: center;
+  }
+
+  .divNomCompetences h2 {
+    font-size: 20px;
+  }
+
+  .divNomCompetences img {
+    width: 80%;
+  }
+
+  .sectionLangage {
+    gap: 3rem;
+    width: 80%;
+    margin: auto;
+    
+  }
+
+  .divLangage,
+  .divLangageLast {
+    font-size: 18px;
+    gap: 14px;
+  }
+
+  .sousLanguage {
+    font-size: 15px;
+  }
+
+  .divLangSpecial {
+    gap: 1rem;
+  }
+}

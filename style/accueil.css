@@ -1,0 +1,61 @@
+.firstDivMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.desc {
+  width: 38%;
+  margin-left: 15%;
+  font-size: 20px;
+}
+
+.logoDev {
+  opacity: 0;
+  animation: zoneReveal 1.9s ease-out forwards;
+}
+
+.knight {
+  opacity: 0;
+  transform: translateX(200px);
+  animation: slideRight 1.9s ease-out forwards;
+}
+
+.knightMobile {
+  display: none;
+}
+
+@media screen and (max-width: 431px) {
+  .firstDivMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logoDev {
+    width: 80vw;
+  }
+
+  .knight {
+    display: none;
+  }
+
+  .desc {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .knightMobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: slideRight 2s ease-out forwards;
+  }
+}

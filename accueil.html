@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/accueil.css" />
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/global.css">
+
+    <title>Accueil</title>
+  </head>
+  <body>
+    <div id="divMenuBurger">
+      <div class="divMenu">
+        <img class="imgHautMenu" src="./assets/imgHautMenuBurger.svg" alt="img menu burger" />
+        <div class="divPage">
+          <img src="./assets/imgSelectMenuBurger.svg" alt="selection" />
+          <a class="lienPages lienChoisis" href="./accueil.html">ACCUEIL</a>
+          <img class="imgSelectReverse" src="./assets/imgSelectMenuBurger.svg" alt="selection"/>        </div>
+        <div class="divPage">
+          <a class="lienPages" href="./pages/competences.html">COMPETENCES</a>
+        </div>
+        <div class="divPage">
+          <a class="lienPages" href="./pages/projets.html">PROJET</a>
+        </div>
+        <div class="divPage">
+          <a class="lienPages" href="./pages/aPropos.html">A PROPOS</a>
+        </div>
+        <div class="divPage">
+          <a class="lienPages " href="./pages/contact.html">CONTACT</a>
+        </div>
+        <img class="imgBasMenu" src="./assets/imgBasMenuBurger.svg" alt="img menu burger" />
+      </div>
+    </div>
+    <header>
+      <div>
+        <a href="./accueil.html"><img src="./assets/logo.svg" alt="logo" /></a>
+        <h1>ACCUEIL</h1>
+      </div>
+      <nav>
+        <ul>
+          <li class="page"><a href="accueil.html">ACCUEIL</a></li>
+          <li><a href="./pages/competences.html">COMPETENCES</a></li>
+          <li><a href="./pages/projets.html">PROJETS</a></li>
+          <li><a href="./pages/aPropos.html">A PROPOS</a></li>
+          <li><a href="./pages/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <nav class="navMenuBurger">
+        <button id="btnMenuBurger">
+          <img src="./assets/menuBurger.svg" alt="menu burger" />
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="firstDivMain">
+        <img class="logoDev" src="./assets/devWeb.svg" alt="icon dev web" />
+        <img class="knight" src="./assets/knight.svg" alt="knight" />
+      </div>
+      <p class="desc">
+        Développeur full stack, j’aime apprendre, relever de nouveaux défis et
+        travailler en équipe afin d’évoluer et de construire des projets utiles,
+        performants et bien pensés.
+      </p>
+      <img class="knightMobile" src="./assets/knight.svg" alt="knight" />
+    </main>
+
+    <footer class="footerAll">
+      <div class="divEnnemis">
+        <img class="imgGaucheEnnemi" src="./assets/ennemi1.svg" alt="ennemi" />
+        <img class="imgDroiteEnnemi" src="./assets/ennemi2.svg" alt="ennemi" />
+      </div>
+      <div class="footerPortfolio">
+        <img src="./assets/logo.svg" alt="logo" />
+        <p>Portfolio</p>
+      </div>
+      <div class="footerLink">
+        <a href="https://github.com/DarisB1"
+          ><img src="../assets/github.svg" alt="github"
+        /></a>
+        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/"
+          ><img src="../assets/linkedIn.svg" alt="linkedIn"
+        /></a>
+      </div>
+    </footer>
+    <script type="module" src="./script/script.js"></script>
+  </body>
+</html>

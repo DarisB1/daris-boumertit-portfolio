@@ -1,0 +1,121 @@
+.disc {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 50px;
+  padding: 30px;
+  width: 25vw;
+  height: 68vh;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1; 
+  position: relative;
+}
+
+#divEnvoieReussi {
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  background-color: #344154;
+  padding: 2rem 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-top: 2rem;
+}
+
+#divEnvoieRate {
+  z-index: 2;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  background-color: #344154;
+  padding: 2rem 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-top: 2rem;
+}
+
+#divEnvoieRate p {
+  width: 80%;
+  text-align: center;
+}
+
+#divEnvoieReussi img,
+#divEnvoieRate img {
+  position: absolute;
+  bottom: 70%;
+  left: 44%;
+}
+
+#divEnvoieRate img {
+  left: 46%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aab3c2;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #2a3a56;
+  color: #aab3c2;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #aab3c2;
+}
+
+textarea {
+  height: 20vh;
+}
+
+button[type="submit"] {
+  background: rgba(79, 209, 255, 0.3);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 45%;
+}
+
+button[type="submit"]:hover {
+  background: rgba(79, 209, 255, 0.5);
+}
+
+@media screen and (max-width: 431px) {
+  form {
+    width: 80%;
+    height: 65vh;
+  }
+}
