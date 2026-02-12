@@ -18,14 +18,14 @@ btnMenuBurger.addEventListener("click", () => {
 
 if (poo && window.innerWidth <= 431) {
   poo.textContent = "POO";
-  mc.textContent = "MCD, MLD, MPD";
+  mc.textContent = "MCD MLD MPD";
   mvc.textContent = "MVC";
-  allGit.textContent = "Git / GitHub / GitLab";
+  allGit.textContent = "Git GitHub GitLab";
 } else if (poo) {
   poo.textContent = "Programmation Orientée Objet (POO)";
   mc.textContent = "Modélisation de données (MCD, MLD, MPD)";
   mvc.textContent = "Architecture MVC";
-  allGit.textContent = "Git / GitHub / GitLab (versioning, travail collaboratif)";
+  allGit.textContent = "Git GitHub GitLab (versioning, travail collaboratif)";
 }
 
 if (form) {
