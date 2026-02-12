@@ -116,6 +116,6 @@ button[type="submit"]:hover {
 @media screen and (max-width: 431px) {
   form {
     width: 80%;
-    height: 70vh;
+    height: 63vh;
   }
 }
