@@ -109,7 +109,6 @@ header ul {
   font-size: 15px;
   font-weight: bold;
 }
-
 .navMenuBurger {
   display: none;
 }
@@ -166,6 +165,7 @@ main {
   }
 
   header {
+    z-index: 8;
     width: 80vw;
     height: 10%;
     border-radius: 999px;
