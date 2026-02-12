@@ -44,7 +44,6 @@
 .divLangage {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 12px;
   font-size: 25px;
   font-weight: bold;
@@ -97,6 +96,10 @@
   .divLangageLast {
     font-size: 18px;
     gap: 14px;
+  }
+
+  .divLangageLast {
+    gap: 3rem;
   }
 
   .sousLanguage {
