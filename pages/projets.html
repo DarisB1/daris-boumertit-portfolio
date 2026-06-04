@@ -1,171 +1,115 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/projets.css" />
+    <meta name="description" content="Projets réalisés par Daris Boumertit – développeur full stack." />
     <link rel="stylesheet" href="../style/global.css" />
-    <link rel="stylesheet" href="../style/footer.css" />
-    <title>Projets</title>
+    <link rel="stylesheet" href="../style/projets.css" />
+    <title>Projets — Daris</title>
   </head>
   <body>
-    <div id="divMenuBurger">
-      <div class="divMenu">
-        <img
-          class="imgHautMenu"
-          src="../assets/imgHautMenuBurger.svg"
-          alt="img menu burger"
-        />
+
+    <div id="divMenuBurger" role="dialog" aria-modal="true" aria-label="Navigation mobile">
+      <nav class="divMenu">
+        <img class="imgHautMenu" src="../assets/imgHautMenuBurger.svg" alt="" aria-hidden="true" />
+        <div class="divPage"><a class="lienPages" href="../accueil.html">Accueil</a></div>
+        <div class="divPage"><a class="lienPages" href="./competences.html">Compétences</a></div>
         <div class="divPage">
-          <a class="lienPages" href="../index.html">ACCUEIL</a>
+          <img class="imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
+          <a class="lienPages lienChoisis" href="./projets.html">Projets</a>
+          <img class="imgSelectReverse imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
         </div>
-        <div class="divPage">
-          <a class="lienPages" href="./competences.html">COMPETENCES</a>
-        </div>
-        <div class="divPage">
-          <img
-            class="imgSelect"
-            src="../assets/imgSelectMenuBurger.svg"
-            alt="selection"
-          />
-          <a class="lienPages lienChoisis" href="./projets.html">PROJETS</a>
-          <img
-            class="imgSelectReverse imgSelect"
-            src="../assets/imgSelectMenuBurger.svg"
-            alt="selection"
-          />
-        </div>
-        <div class="divPage">
-          <a class="lienPages" href="./aPropos.html">A PROPOS</a>
-        </div>
-        <div class="divPage">
-          <a class="lienPages" href="./contact.html">CONTACT</a>
-        </div>
-        <img
-          class="imgBasMenu"
-          src="../assets/imgBasMenuBurger.svg"
-          alt="img menu burger"
-        />
-      </div>
+        <div class="divPage"><a class="lienPages" href="./aPropos.html">À Propos</a></div>
+        <div class="divPage"><a class="lienPages" href="./contact.html">Contact</a></div>
+        <img class="imgBasMenu" src="../assets/imgBasMenuBurger.svg" alt="" aria-hidden="true" />
+      </nav>
     </div>
+
     <header>
       <div>
-        <a href="../index.html"
-          ><img src="../assets/logo.svg" alt="logo"
-        /></a>
-        <h1>PROJETS</h1>
+        <a href="../accueil.html" aria-label="Accueil"><img src="../assets/logo.svg" alt="Logo" /></a>
+        <h1>Projets</h1>
       </div>
-      <nav>
+      <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="../index.html">ACCUEIL</a></li>
-          <li><a href="./competences.html">COMPETENCES</a></li>
-          <li class="page"><a href="./projets.html">PROJETS</a></li>
-          <li><a href="./aPropos.html">A PROPOS</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="../accueil.html">Accueil</a></li>
+          <li><a href="./competences.html">Compétences</a></li>
+          <li class="page"><a href="./projets.html">Projets</a></li>
+          <li><a href="./aPropos.html">À Propos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-      <nav class="navMenuBurger">
-        <button id="btnMenuBurger">
-          <img src="../assets/menuBurger.svg" alt="menu burger" />
+      <nav class="navMenuBurger" aria-label="Menu mobile">
+        <button id="btnMenuBurger" aria-expanded="false" aria-controls="divMenuBurger">
+          <img src="../assets/menuBurger.svg" alt="Ouvrir le menu" />
         </button>
       </nav>
     </header>
 
     <main>
-      <article class="articleProjet"></article>
+      <!-- Carrousel desktop (rempli dynamiquement par JS) -->
+      <article class="articleProjet" aria-live="polite" aria-label="Projet en cours"></article>
 
-      <article class="articleProjetMobile">
+      <!-- Liste mobile statique -->
+      <article class="articleProjetMobile" aria-label="Liste des projets">
         <section class="sectionProjetMobile">
-          <h2>nom du projet</h2>
-          <img
-            class="imgProjet"
-            src="../assets/testProjetImg.png"
-            alt="imgfevfev"
-          />
-          <span id="spanDesc">
-            Arrose les plantes en bleu et laisse passer la nuit pour les faire
-            pousser...
-          </span>
-          <img src="../assets/separateur.svg" alt="separation" />
-
+          <h2>Forest Game</h2>
+          <img class="imgProjet" src="../assets/testProjetImg.png" alt="Capture du jeu Forest Game" />
+          <span>Arrose les plantes en bleu et laisse passer la nuit pour les faire pousser.</span>
+          <img src="../assets/separateur.svg" alt="" aria-hidden="true" />
           <div class="divdescLangages">
-            <h3>Langages</h3>
+            <h3>Technologies</h3>
             <div class="divLangages">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              <span>HTML</span><span>CSS</span><span>JS</span>
             </div>
           </div>
-          <a href="https://github.com/DarisB1/ChronoSeed" class="btnLien">lien github</a>
+          <a href="https://github.com/DarisB1/jeu-du-potager" target="_blank" rel="noopener noreferrer" class="btnLien">Voir sur GitHub</a>
         </section>
         <section class="sectionProjetMobile">
-          <h2>nom du projet</h2>
-          <img
-            class="imgProjet"
-            src="../assets/testProjetImg.png"
-            alt="imgfevfev"
-          />
-          <span id="spanDesc">
-            Arrose les plantes en bleu et laisse passer la nuit pour les faire
-            pousser...
-          </span>
-          <img src="../assets/separateur.svg" alt="separation" />
-
+          <h2>Tic Tac Toe</h2>
+          <img class="imgProjet" src="../assets/ticTacToe.png" alt="Capture du Tic Tac Toe" />
+          <span>Jeu de stratégie pour deux joueurs sur une grille 3×3.</span>
+          <img src="../assets/separateur.svg" alt="" aria-hidden="true" />
           <div class="divdescLangages">
-            <h3>Langages</h3>
+            <h3>Technologies</h3>
             <div class="divLangages">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JS</span>
+              <span>HTML</span><span>CSS</span><span>JS</span>
             </div>
           </div>
-          <a href="https://github.com/DarisB1/ChronoSeed" class="btnLien">lien github</a>
+          <a href="https://github.com/DarisB1/tic-tac-toe" target="_blank" rel="noopener noreferrer" class="btnLien">Voir sur GitHub</a>
         </section>
         <section class="sectionProjetMobile">
-          <h2>nom du projet</h2>
-          <img
-            class="imgProjet"
-            src="../assets/testProjetImg.png"
-            alt="imgfevfev"
-          />
-          <span id="spanDesc">
-            Arrose les plantes en bleu et laisse passer la nuit pour les faire
-            pousser...
-          </span>
-          <img src="../assets/separateur.svg" alt="separation" />
-
+          <h2>API Project</h2>
+          <img class="imgProjet" src="../assets/testProjetImg.png" alt="Capture du projet API" />
+          <span>Projet utilisant une API externe avec fetch pour afficher des données dynamiquement.</span>
+          <img src="../assets/separateur.svg" alt="" aria-hidden="true" />
           <div class="divdescLangages">
-            <h3>Langages</h3>
+            <h3>Technologies</h3>
             <div class="divLangages">
-              <span>HTML</span>
-              <span>CSS</span>
               <span>JS</span>
             </div>
           </div>
-          <a href="https://github.com/DarisB1/ChronoSeed" class="btnLien">lien github</a>
+          <a href="https://github.com/DarisB1" target="_blank" rel="noopener noreferrer" class="btnLien">Voir sur GitHub</a>
         </section>
       </article>
     </main>
 
     <footer class="footerAll">
-      <div class="divEnnemis">
-        <img class="imgGaucheEnnemi" src="../assets/ennemi5.svg" alt="ennemi" />
-        <img class="imgDroiteEnnemi" src="../assets/ennemi6.svg" alt="ennemi" />
+      <div class="divEnnemis" aria-hidden="true">
+        <img class="imgGaucheEnnemi" src="../assets/ennemi5.svg" alt="" />
+        <img class="imgDroiteEnnemi" src="../assets/ennemi6.svg" alt="" />
       </div>
       <div class="footerPortfolio">
-        <img src="../assets/logo.svg" alt="logo" />
+        <img src="../assets/logo.svg" alt="Logo" />
         <p>Portfolio</p>
       </div>
       <div class="footerLink">
-        <a href="https://github.com/DarisB1"
-          ><img src="../assets/github.svg" alt="github"
-        /></a>
-        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/"
-          ><img src="../assets/linkedIn.svg" alt="linkedIn"
-        /></a>
+        <a href="https://github.com/DarisB1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="../assets/github.svg" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="../assets/linkedIn.svg" alt="LinkedIn" /></a>
       </div>
     </footer>
+
     <script type="module" src="../script/script.js"></script>
-    <script type="module" src="../script/carrousel.js"></script>
   </body>
 </html>

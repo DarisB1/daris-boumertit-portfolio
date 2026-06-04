@@ -1,123 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/aPropos.css" />
+    <meta name="description" content="À propos de Daris Boumertit – développeur full stack junior, étudiant à EDEN School." />
     <link rel="stylesheet" href="../style/global.css" />
-    <link rel="stylesheet" href="../style/footer.css" />
-
-    <title>A Propos</title>
+    <link rel="stylesheet" href="../style/aPropos.css" />
+    <title>À Propos — Daris</title>
   </head>
   <body>
-    <div id="divMenuBurger">
-      <div class="divMenu">
-        <img
-          class="imgHautMenu"
-          src="../assets/imgHautMenuBurger.svg"
-          alt="img menu burger"
-        />
+
+    <div id="divMenuBurger" role="dialog" aria-modal="true" aria-label="Navigation mobile">
+      <nav class="divMenu">
+        <img class="imgHautMenu" src="../assets/imgHautMenuBurger.svg" alt="" aria-hidden="true" />
+        <div class="divPage"><a class="lienPages" href="../accueil.html">Accueil</a></div>
+        <div class="divPage"><a class="lienPages" href="./competences.html">Compétences</a></div>
+        <div class="divPage"><a class="lienPages" href="./projets.html">Projets</a></div>
         <div class="divPage">
-          <a class="lienPages" href="../index.html">ACCUEIL</a>
+          <img class="imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
+          <a class="lienPages lienChoisis" href="./aPropos.html">À Propos</a>
+          <img class="imgSelectReverse imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
         </div>
-        <div class="divPage">
-          <a class="lienPages" href="./competences.html">COMPETENCES</a>
-        </div>
-        <div class="divPage">
-          <a class="lienPages" href="./projets.html">PROJET</a>
-        </div>
-        <div class="divPage">
-          <img
-            class="imgSelect"
-            src="../assets/imgSelectMenuBurger.svg"
-            alt="selection"
-          />
-          <a class="lienPages lienChoisis" href="./aPropos.html">A PROPOS</a>
-          <img
-            class="imgSelectReverse imgSelect"
-            src="../assets/imgSelectMenuBurger.svg"
-            alt="selection"
-          />
-        </div>
-        <div class="divPage">
-          <a class="lienPages" href="./contact.html">CONTACT</a>
-        </div>
-        <img
-          class="imgBasMenu"
-          src="../assets/imgBasMenuBurger.svg"
-          alt="img menu burger"
-        />
-      </div>
+        <div class="divPage"><a class="lienPages" href="./contact.html">Contact</a></div>
+        <img class="imgBasMenu" src="../assets/imgBasMenuBurger.svg" alt="" aria-hidden="true" />
+      </nav>
     </div>
+
     <header>
       <div>
-        <a href="../index.html"
-          ><img src="../assets/logo.svg" alt="logo"
-        /></a>
-        <h1>A PROPOS</h1>
+        <a href="../accueil.html" aria-label="Accueil"><img src="../assets/logo.svg" alt="Logo" /></a>
+        <h1>À Propos</h1>
       </div>
-      <nav>
+      <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="../index.html">ACCUEIL</a></li>
-          <li><a href="./competences.html">COMPETENCES</a></li>
-          <li><a href="./projets.html">PROJETS</a></li>
-          <li class="page"><a href="./aPropos.html">A PROPOS</a></li>
-          <li><a href="./contact.html">CONTACT</a></li>
+          <li><a href="../accueil.html">Accueil</a></li>
+          <li><a href="./competences.html">Compétences</a></li>
+          <li><a href="./projets.html">Projets</a></li>
+          <li class="page"><a href="./aPropos.html">À Propos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-      <nav class="navMenuBurger">
-        <button id="btnMenuBurger">
-          <img src="../assets/menuBurger.svg" alt="menu burger" />
+      <nav class="navMenuBurger" aria-label="Menu mobile">
+        <button id="btnMenuBurger" aria-expanded="false" aria-controls="divMenuBurger">
+          <img src="../assets/menuBurger.svg" alt="Ouvrir le menu" />
         </button>
       </nav>
     </header>
 
-    <main class="mainProjets">
+    <main>
       <article class="artAPropos">
-        <img class="imgRadiance" src="../assets/imgRadiance.svg" alt="radiance"/>
+        <img class="imgRadiance" src="../assets/imgRadiance.svg" alt="Illustration personnage" />
         <section class="secDesc">
-          <h2>Presentation</h2>
+          <h2>Présentation</h2>
           <p>
-            Bonjour, je m’appelle Daris. Développeur full-stack junior et
+            Bonjour, je m'appelle Daris. Développeur full-stack junior et
             étudiant à EDEN School, je maîtrise aussi bien le front-end que le
             back-end et je suis motivé par la création de projets modernes et
             efficaces.
           </p>
-          <h2>Mes competences humaines</h2>
+
+          <h2>Qualités humaines</h2>
           <ul>
-            <li>Spontané & Sociable</li>
-            <li>Intègre & Organisé</li>
-            <li>Indépendant & Responsable</li>
+            <li>Spontané &amp; Sociable</li>
+            <li>Intègre &amp; Organisé</li>
+            <li>Indépendant &amp; Responsable</li>
           </ul>
-          <h2>Mes hobbies</h2>
+
+          <h2>Centres d'intérêt</h2>
           <ul>
-            <li>🎵 La musique (hip-hop, RAP FR, RAP US...)</li>
+            <li>🎵 La musique (hip-hop, RAP FR, RAP US…)</li>
             <li>🧩 Les puzzles</li>
-            <li>​🍰​ patisserie</li>
-            <li>🎮 jeu video(hollow knight, silksong...)</li>
+            <li>🪡 La couture</li>
+            <li>🎮 Jeux vidéo (Hollow Knight, Silksong…)</li>
           </ul>
         </section>
       </article>
     </main>
 
     <footer class="footerSpecial">
-      <div class="divEnnemis">
-        <img class="imgGaucheEnnemi" src="../assets/ennemi7.svg" alt="ennemi" />
-        <img class="imgDroiteEnnemi" src="../assets/ennemi8.svg" alt="ennemi" />
+      <div class="divEnnemis" aria-hidden="true">
+        <img class="imgGaucheEnnemi" src="../assets/ennemi7.svg" alt="" />
+        <img class="imgDroiteEnnemi" src="../assets/ennemi8.svg" alt="" />
       </div>
       <div class="footerPortfolio">
-        <img src="../assets/logo.svg" alt="logo" />
+        <img src="../assets/logo.svg" alt="Logo" />
         <p>Portfolio</p>
       </div>
       <div class="footerLink">
-        <a href="https://github.com/DarisB1"
-          ><img src="../assets/github.svg" alt="github"
-        /></a>
-        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/"
-          ><img src="../assets/linkedIn.svg" alt="linkedIn"
-        /></a>
+        <a href="https://github.com/DarisB1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="../assets/github.svg" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="../assets/linkedIn.svg" alt="LinkedIn" /></a>
       </div>
     </footer>
+
     <script type="module" src="../script/script.js"></script>
   </body>
 </html>

@@ -1,61 +1,93 @@
+/* =============================================
+   ACCUEIL
+   ============================================= */
+main {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  min-height: calc(100vh - var(--header-h));
+}
+
 .firstDivMain {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  margin: auto;
-}
-
-.desc {
-  width: 38%;
-  margin-left: 15%;
-  font-size: 20px;
+  justify-content: center;
+  gap: 4rem;
+  width: min(900px, 90vw);
+  margin: 0 auto;
 }
 
 .logoDev {
+  flex: 1;
+  max-width: 360px;
   opacity: 0;
-  animation: zoneReveal 1.9s ease-out forwards;
+  animation: zoneReveal 1.8s ease-out 0.2s forwards;
+  filter: drop-shadow(0 0 30px rgba(79, 209, 255, 0.12));
 }
 
 .knight {
+  flex: 0 0 auto;
+  max-width: 260px;
   opacity: 0;
-  transform: translateX(200px);
-  animation: slideRight 1.9s ease-out forwards;
+  transform: translateX(80px);
+  animation: slideRight 1.8s ease-out 0.4s forwards;
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.6));
 }
 
-.knightMobile {
-  display: none;
+.desc {
+  max-width: 520px;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--color-muted);
+  line-height: 1.9;
+  opacity: 0;
+  animation: fadeUp 1s ease-out 1.2s forwards;
+  padding: 0 1.5rem;
 }
 
-@media screen and (max-width: 431px) {
+/* Accent sur les mots clés */
+.desc strong {
+  color: var(--color-accent);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.knightMobile { display: none; }
+
+/* =============================================
+   RESPONSIVE MOBILE
+   ============================================= */
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1.5rem 1rem;
+    min-height: calc(100dvh - 80px);
+  }
+
   .firstDivMain {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding-top: 2rem;
   }
 
   .logoDev {
-    width: 80vw;
+    width: 75vw;
+    max-width: 300px;
   }
 
-  .knight {
-    display: none;
+  .knight { display: none; }
+
+  .knightMobile {
+    display: block;
+    width: 160px;
+    opacity: 0;
+    transform: translateX(40px);
+    animation: slideRight 1.8s ease-out 0.6s forwards;
   }
 
   .desc {
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    font-size: 18px;
-  }
-
-  .knightMobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: slideRight 2s ease-out forwards;
+    font-size: 1rem;
+    padding: 0;
   }
 }
