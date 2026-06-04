@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contactez Daris Boumertit – développeur full stack." />
+    <meta
+      name="description"
+      content="Contactez Daris Boumertit – développeur full stack."
+    />
     <link rel="stylesheet" href="../style/global.css" />
     <link rel="stylesheet" href="../style/contact.css" />
     <title>Contact — Daris</title>
   </head>
   <body>
-
     <!-- Notifications -->
     <div id="divEnvoieReussi" role="alert" aria-live="assertive">
       <img src="../assets/check.svg" alt="Succès" />
@@ -21,30 +23,65 @@
     </div>
 
     <!-- Menu burger -->
-    <div id="divMenuBurger" role="dialog" aria-modal="true" aria-label="Navigation mobile">
+    <div
+      id="divMenuBurger"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation mobile"
+    >
       <nav class="divMenu">
-        <img class="imgHautMenu" src="../assets/imgHautMenuBurger.svg" alt="" aria-hidden="true" />
-        <div class="divPage"><a class="lienPages" href="../accueil.html">Accueil</a></div>
-        <div class="divPage"><a class="lienPages" href="./competences.html">Compétences</a></div>
-        <div class="divPage"><a class="lienPages" href="./projets.html">Projets</a></div>
-        <div class="divPage"><a class="lienPages" href="./aPropos.html">À Propos</a></div>
+        <img
+          class="imgHautMenu"
+          src="../assets/imgHautMenuBurger.svg"
+          alt=""
+          aria-hidden="true"
+        />
         <div class="divPage">
-          <img class="imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
-          <a class="lienPages lienChoisis" href="./contact.html">Contact</a>
-          <img class="imgSelectReverse imgSelect" src="../assets/imgSelectMenuBurger.svg" alt="" aria-hidden="true" />
+          <a class="lienPages" href="../index.html">Accueil</a>
         </div>
-        <img class="imgBasMenu" src="../assets/imgBasMenuBurger.svg" alt="" aria-hidden="true" />
+        <div class="divPage">
+          <a class="lienPages" href="./competences.html">Compétences</a>
+        </div>
+        <div class="divPage">
+          <a class="lienPages" href="./projets.html">Projets</a>
+        </div>
+        <div class="divPage">
+          <a class="lienPages" href="./aPropos.html">À Propos</a>
+        </div>
+        <div class="divPage">
+          <img
+            class="imgSelect"
+            src="../assets/imgSelectMenuBurger.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <a class="lienPages lienChoisis" href="./contact.html">Contact</a>
+          <img
+            class="imgSelectReverse imgSelect"
+            src="../assets/imgSelectMenuBurger.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </div>
+        <img
+          class="imgBasMenu"
+          src="../assets/imgBasMenuBurger.svg"
+          alt=""
+          aria-hidden="true"
+        />
       </nav>
     </div>
 
     <header>
       <div>
-        <a href="../accueil.html" aria-label="Accueil"><img src="../assets/logo.svg" alt="Logo" /></a>
+        <a href="../index.html" aria-label="Accueil"
+          ><img src="../assets/logo.svg" alt="Logo"
+        /></a>
         <h1>Contact</h1>
       </div>
       <nav aria-label="Navigation principale">
         <ul>
-          <li><a href="../accueil.html">Accueil</a></li>
+          <li><a href="../index.html">Accueil</a></li>
           <li><a href="./competences.html">Compétences</a></li>
           <li><a href="./projets.html">Projets</a></li>
           <li><a href="./aPropos.html">À Propos</a></li>
@@ -52,7 +89,11 @@
         </ul>
       </nav>
       <nav class="navMenuBurger" aria-label="Menu mobile">
-        <button id="btnMenuBurger" aria-expanded="false" aria-controls="divMenuBurger">
+        <button
+          id="btnMenuBurger"
+          aria-expanded="false"
+          aria-controls="divMenuBurger"
+        >
           <img src="../assets/menuBurger.svg" alt="Ouvrir le menu" />
         </button>
       </nav>
@@ -64,17 +105,36 @@
 
         <div class="form-group">
           <label for="user_name">Nom</label>
-          <input type="text" id="user_name" name="user_name" placeholder="Votre nom…" required autocomplete="name" />
+          <input
+            type="text"
+            id="user_name"
+            name="user_name"
+            placeholder="Votre nom…"
+            required
+            autocomplete="name"
+          />
         </div>
 
         <div class="form-group">
           <label for="user_email">Email</label>
-          <input type="email" id="user_email" name="user_email" placeholder="Votre email…" required autocomplete="email" />
+          <input
+            type="email"
+            id="user_email"
+            name="user_email"
+            placeholder="Votre email…"
+            required
+            autocomplete="email"
+          />
         </div>
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message…" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message…"
+            required
+          ></textarea>
         </div>
 
         <button type="submit" id="btnSub">Envoyer</button>
@@ -91,8 +151,20 @@
         <p>Portfolio</p>
       </div>
       <div class="footerLink">
-        <a href="https://github.com/DarisB1" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="../assets/github.svg" alt="GitHub" /></a>
-        <a href="https://www.linkedin.com/in/daris-boumertit-39269b313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="../assets/linkedIn.svg" alt="LinkedIn" /></a>
+        <a
+          href="https://github.com/DarisB1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          ><img src="../assets/github.svg" alt="GitHub"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/daris-boumertit-39269b313/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          ><img src="../assets/linkedIn.svg" alt="LinkedIn"
+        /></a>
       </div>
     </footer>
 
